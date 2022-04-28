@@ -1,2 +1,2 @@
 # IMDB_APP
-!HOMEPAGE(https://github.com/wweerrbb/IMDB_APP/blob/main/HomePage.jpg?raw=true)
+!HOMEPAGE(https://raw.githubusercontent.com/wweerrbb/IMDB_APP/master/.github/HomePage.jpg)
