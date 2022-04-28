@@ -1,0 +1,195 @@
+@import url();
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #ac6eb4;
+  background-color: #4980e6;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.home, .movies, .tvshows, .celebs, .contact, .upcoming{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+header {
+  background-color: #3624d6;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+header h1{
+  background-color: #3624d6;
+  color:rgb(52, 177, 79);
+  padding-right: 400px;
+}
+.search {
+  border: 2px solid #22254b;
+  color:rgb(207, 29, 130);
+  background-color: transparent;
+  background-color: #3624d6;
+  border-radius:  90px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.search:focus {
+  outline: 0;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.movie{
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: rgb(165, 199, 44);
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie img{
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+
+
+.movie-info {
+  color: #cbee06;
+  display: flex;
+  padding:1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info h3{
+  margin: 0;
+}
+
+.movie-over {
+  background-color: rgba(223, 88, 88, 0.5);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  color:rgb(253, 251, 251);
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left:0;
+  right:0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
+
+.movie-over p, h2{
+  background-color: rgba(223, 88, 88, 0);
+}
+.tag {
+  background-color: rgb(0, 22, 121);
+  padding: .5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.tag.green{
+  color:rgb(86, 207, 86);
+}
+
+.tag.orange {
+  color:orange;
+}
+
+.tag.red {
+  color:red;
+}
+
+.profile_img{
+  display: flex;
+  height: 100%;
+  padding-top: 20px;
+ 
+}
+
+.button {
+  color:brown;
+  
+}
+
+.hero {
+  color:white;
+  position: relative;
+  min-height: 500px;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-content {
+    padding-left:60px;
+  max-width: 70%;
+  padding-bottom: 60px;
+  background-color: rgba(233, 13, 13, 0);
+}
+
+.hero-title {
+  font-size: 70px;
+  margin: 0;
+   background-color: rgba(223, 88, 88, 0);
+}
+
+.hero-overview {
+   background-color: rgba(223, 88, 88, 0);
+}
+
+.button {
+  background-color: #0F1014;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.youtube-container {
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.button-close {
+  position: absolute;
+  z-index: 5;
+  bottom: 10px;
+  left: 10px
+
+}
